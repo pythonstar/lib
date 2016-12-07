@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\alter.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\analyze.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\attach.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\auth.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backup.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bitvec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btmutex.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\build.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\callback.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\complete.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\date.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\delete.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\expr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fault.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fkey.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fts3_expr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\func.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\global.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\insert.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\journal.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\legacy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loadext.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\malloc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mem0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mem1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mem2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mem3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mem5.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memjournal.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex_noop.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex_os2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex_unix.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex_w32.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\notify.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opcodes.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_os2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_unix.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_win.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pager.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parse.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pcache.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pcache1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pragma.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prepare.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\printf.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\resolve.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rowset.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\select.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\status.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\table.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tokenize.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\trigger.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\update.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utf.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vacuum.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vdbe.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vdbeapi.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vdbeaux.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vdbeblob.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vdbemem.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vtab.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\walker.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\where.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\btree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\btreeInt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fts3_expr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fts3_tokenizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hwtime.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\keywordhash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mutex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opcodes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\parse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pcache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rtree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sqlite3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sqlite3ext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sqliteicu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sqliteInt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sqliteLimit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vdbe.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vdbeInt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

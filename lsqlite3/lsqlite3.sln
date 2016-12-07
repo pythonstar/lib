@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lsqlite3", "lsqlite3.vcproj", "{28863C88-DD4F-4D02-9061-4CE56F1558B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Lib_Debug|Win32 = Lib_Debug|Win32
+		Lib_Release|Win32 = Lib_Release|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28863C88-DD4F-4D02-9061-4CE56F1558B5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{28863C88-DD4F-4D02-9061-4CE56F1558B5}.Debug|Win32.Build.0 = Debug|Win32
+		{28863C88-DD4F-4D02-9061-4CE56F1558B5}.Lib_Debug|Win32.ActiveCfg = Lib_Debug|Win32
+		{28863C88-DD4F-4D02-9061-4CE56F1558B5}.Lib_Debug|Win32.Build.0 = Lib_Debug|Win32
+		{28863C88-DD4F-4D02-9061-4CE56F1558B5}.Lib_Release|Win32.ActiveCfg = Lib_Release|Win32
+		{28863C88-DD4F-4D02-9061-4CE56F1558B5}.Lib_Release|Win32.Build.0 = Lib_Release|Win32
+		{28863C88-DD4F-4D02-9061-4CE56F1558B5}.Release|Win32.ActiveCfg = Release|Win32
+		{28863C88-DD4F-4D02-9061-4CE56F1558B5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

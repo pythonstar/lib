@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="opencv_annotation"
+	ProjectGUID="{C8159276-AECA-4205-A53A-025E2883255E}"
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="..\..\bin\Debug"
+			IntermediateDirectory="opencv_annotation.dir\Debug"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /bigobj /MP4"
+				AdditionalIncludeDirectories="F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\apps\annotation\PRIVATE;F:\open\lib\opencvc\sources\apps\annotation;F:\open\lib\opencvc\sources\include\opencv;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\highgui\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;"
+				AssemblerListingLocation="Debug/"
+				BasicRuntimeChecks="3"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				DisableSpecificWarnings="4251;4324"
+				EnableEnhancedInstructionSet="2"
+				EnableFunctionLevelLinking="true"
+				EnableIntrinsicFunctions="true"
+				ExceptionHandling="2"
+				FloatingPointModel="2"
+				InlineFunctionExpansion="0"
+				Optimization="0"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="true"
+				WarningLevel="4"
+				PreprocessorDefinitions="WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR=\&quot;Debug\&quot;"
+				ObjectFile="$(IntDir)\"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\apps\annotation\PRIVATE;F:\open\lib\opencvc\sources\apps\annotation;F:\open\lib\opencvc\sources\include\opencv;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\highgui\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;"
+				PreprocessorDefinitions="WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR=\&quot;Debug\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				AdditionalIncludeDirectories="F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\apps\annotation\PRIVATE;F:\open\lib\opencvc\sources\apps\annotation;F:\open\lib\opencvc\sources\include\opencv;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\highgui\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;"
+				MkTypLibCompatible="false"
+				TargetEnvironment="1"
+				GenerateStublessProxies="true"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"
+CommandLine="&quot;D:\Program Files (x86)\CMake\bin\cmake.exe&quot; -E make_directory F:/open/lib/opencvc/vs2008/lib/Debug&#x0D;&#x0A;if errorlevel 1 goto :VCReportError"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				LinkLibraryDependencies="false"
+				AdditionalOptions=" /machine:X86 /debug"
+				AdditionalDependencies="$(NOINHERIT) kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\lib\ia32\ippicvmt.lib ..\..\lib\Debug\opencv_highgui300d.lib ..\..\lib\Debug\opencv_videoio300d.lib ..\..\lib\Debug\opencv_imgcodecs300d.lib ..\..\lib\Debug\opencv_imgproc300d.lib ..\..\lib\Debug\opencv_core300d.lib ..\..\lib\Debug\opencv_hal300d.lib F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\lib\ia32\ippicvmt.lib "
+				OutputFile="..\..\bin\Debug\opencv_annotationd.exe"
+				Version="0.0"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories=""
+				ProgramDatabaseFile="..\..\bin\Debug/opencv_annotationd.pdb"
+				GenerateDebugInformation="true"
+				SubSystem="1"
+				ImportLibrary="..\..\lib\Debug\opencv_annotationd.lib"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="..\..\bin\Release"
+			IntermediateDirectory="opencv_annotation.dir\Release"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions=" /bigobj /MP4"
+				AdditionalIncludeDirectories="F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\apps\annotation\PRIVATE;F:\open\lib\opencvc\sources\apps\annotation;F:\open\lib\opencvc\sources\include\opencv;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\highgui\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;"
+				AssemblerListingLocation="Release/"
+				CompileAs="2"
+				DebugInformationFormat="3"
+				DisableSpecificWarnings="4251;4324"
+				EnableEnhancedInstructionSet="2"
+				EnableFunctionLevelLinking="true"
+				EnableIntrinsicFunctions="true"
+				ExceptionHandling="2"
+				FloatingPointModel="2"
+				InlineFunctionExpansion="2"
+				Optimization="2"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="true"
+				WarningLevel="4"
+				PreprocessorDefinitions="WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR=\&quot;Release\&quot;"
+				ObjectFile="$(IntDir)\"
+/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\apps\annotation\PRIVATE;F:\open\lib\opencvc\sources\apps\annotation;F:\open\lib\opencvc\sources\include\opencv;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\highgui\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;"
+				PreprocessorDefinitions="WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR=\&quot;Release\&quot;"/>
+			<Tool
+				Name="VCMIDLTool"
+				AdditionalIncludeDirectories="F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\include;..\..\;F:\open\lib\opencvc\sources\apps\annotation\PRIVATE;F:\open\lib\opencvc\sources\apps\annotation;F:\open\lib\opencvc\sources\include\opencv;F:\open\lib\opencvc\sources\modules\core\include;F:\open\lib\opencvc\sources\modules\hal\include;F:\open\lib\opencvc\sources\modules\highgui\include;F:\open\lib\opencvc\sources\modules\imgproc\include;F:\open\lib\opencvc\sources\modules\imgcodecs\include;F:\open\lib\opencvc\sources\modules\videoio\include;"
+				MkTypLibCompatible="false"
+				TargetEnvironment="1"
+				GenerateStublessProxies="true"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"
+CommandLine="&quot;D:\Program Files (x86)\CMake\bin\cmake.exe&quot; -E make_directory F:/open/lib/opencvc/vs2008/lib/Release&#x0D;&#x0A;if errorlevel 1 goto :VCReportError"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				LinkLibraryDependencies="false"
+				AdditionalOptions=" /machine:X86 /debug"
+				AdditionalDependencies="$(NOINHERIT) kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\lib\ia32\ippicvmt.lib ..\..\lib\Release\opencv_highgui300.lib ..\..\lib\Release\opencv_videoio300.lib ..\..\lib\Release\opencv_imgcodecs300.lib ..\..\lib\Release\opencv_imgproc300.lib ..\..\lib\Release\opencv_core300.lib ..\..\lib\Release\opencv_hal300.lib F:\open\lib\opencvc\sources\3rdparty\ippicv\unpack\ippicv_win\lib\ia32\ippicvmt.lib "
+				OutputFile="..\..\bin\Release\opencv_annotation.exe"
+				Version="0.0"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories=""
+				ProgramDatabaseFile="..\..\bin\Release/opencv_annotation.pdb"
+				GenerateDebugInformation="true"
+				SubSystem="1"
+				ImportLibrary="..\..\lib\Release\opencv_annotation.lib"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+			<File
+				RelativePath="F:\open\lib\opencvc\sources\apps\annotation\CMakeLists.txt">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule F:/open/lib/opencvc/sources/apps/annotation/CMakeLists.txt"
+					CommandLine="&quot;D:\Program Files (x86)\CMake\bin\cmake.exe&quot; -HF:/open/lib/opencvc/sources -B../../ --check-stamp-file F:\open\lib\opencvc\vs2008\apps\annotation\CMakeFiles\generate.stamp&#x0D;&#x0A;if errorlevel 1 goto :VCReportError"
+					AdditionalDependencies="F:\open\lib\opencvc\sources\apps\annotation\CMakeLists.txt;F:\open\lib\opencvc\sources\apps\annotation\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule F:/open/lib/opencvc/sources/apps/annotation/CMakeLists.txt"
+					CommandLine="&quot;D:\Program Files (x86)\CMake\bin\cmake.exe&quot; -HF:/open/lib/opencvc/sources -B../../ --check-stamp-file F:\open\lib\opencvc\vs2008\apps\annotation\CMakeFiles\generate.stamp&#x0D;&#x0A;if errorlevel 1 goto :VCReportError"
+					AdditionalDependencies="F:\open\lib\opencvc\sources\apps\annotation\CMakeLists.txt;F:\open\lib\opencvc\sources\apps\annotation\CMakeLists.txt;"
+					Outputs="CMakeFiles\generate.stamp"/>
+				</FileConfiguration>
+			</File>
+		<Filter
+			Name="Source Files"
+			Filter="">
+			<File
+				RelativePath="F:\open\lib\opencvc\sources\apps\annotation\opencv_annotation.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

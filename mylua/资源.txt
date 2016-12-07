@@ -1,0 +1,19 @@
+LuaStudio<SCM>:
+http://luaforge.net/scm/?group_id=384
+
+luaedit:
+http://luaedit.luaforge.net/
+
+LuaSocket: 
+http://luaforge.net/frs/?group_id=23
+http://w3.impa.br/~diego/software/luasocket/installation.html
+
+
+JSON Module for Lua:
+http://chiselapp.com/user/dhkolf/repository/dkjson/home
+
+
+
+htmlparser:
+http://christopheremoore.net/html-beautifier/
+

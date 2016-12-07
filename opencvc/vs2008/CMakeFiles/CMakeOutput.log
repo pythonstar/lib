@@ -1,0 +1,699 @@
+The system is: Windows - 6.1 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: CompilerIdCXX, 配置: Debug Win32 ------
+1>正在编译...
+1>CMakeCXXCompilerId.cpp
+1>正在链接...
+1>正在嵌入清单...
+1>正在执行生成后事件...
+1>CMAKE_CXX_COMPILER=D:\Microsoft Visual Studio 9.0\VC\bin\cl.exe
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\3.3.1\CompilerIdCXX\Debug\BuildLog.htm”
+1>CompilerIdCXX - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcproj"
+
+The CXX compiler identification is MSVC, found in "F:/open/lib/opencvc/vs2008/CMakeFiles/3.3.1/CompilerIdCXX/CompilerIdCXX.exe"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: CompilerIdC, 配置: Debug Win32 ------
+1>正在编译...
+1>CMakeCCompilerId.c
+1>正在链接...
+1>正在嵌入清单...
+1>正在执行生成后事件...
+1>CMAKE_C_COMPILER=D:\Microsoft Visual Studio 9.0\VC\bin\cl.exe
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\3.3.1\CompilerIdC\Debug\BuildLog.htm”
+1>CompilerIdC - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcproj"
+
+The C compiler identification is MSVC, found in "F:/open/lib/opencvc/vs2008/CMakeFiles/3.3.1/CompilerIdC/CompilerIdC.exe"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_eb69d"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_eb69d, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /EHsc /RTC1 /MDd /Fo"cmTC_eb69d.dir\Debug\\" /Fd"cmTC_eb69d.dir\Debug\vc90.pdb" /W3 /c /Zi /TP .\testCXXCompiler.cxx
+1>testCXXCompiler.cxx
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_eb69d.dir\Debug\BuildLog.htm”
+1>cmTC_eb69d - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_562e4"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_562e4, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /EHsc /RTC1 /MDd /Fo"cmTC_562e4.dir\Debug\\" /Fd"cmTC_562e4.dir\Debug\vc90.pdb" /W3 /c /Zi /TP "D:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXCompilerABI.cpp"
+1>CMakeCXXCompilerABI.cpp
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_562e4.dir\Debug\BuildLog.htm”
+1>cmTC_562e4 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_49853"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_49853, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /EHsc /RTC1 /MDd /Fo"cmTC_49853.dir\Debug\\" /Fd"cmTC_49853.dir\Debug\vc90.pdb" /W3 /c /Zi /TP ..\feature_tests.cxx
+1>feature_tests.cxx
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_49853.dir\Debug\BuildLog.htm”
+1>cmTC_49853 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:0cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the C compiler works passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_4fbf0"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_4fbf0, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Fo"cmTC_4fbf0.dir\Debug\\" /Fd"cmTC_4fbf0.dir\Debug\vc90.pdb" /W3 /c /Zi /TC .\testCCompiler.c
+1>testCCompiler.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_4fbf0.dir\Debug\BuildLog.htm”
+1>cmTC_4fbf0 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_76c52"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_76c52, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Fo"cmTC_76c52.dir\Debug\\" /Fd"cmTC_76c52.dir\Debug\vc90.pdb" /W3 /c /Zi /TC "D:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCCompilerABI.c"
+1>CMakeCCompilerABI.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_76c52.dir\Debug\BuildLog.htm”
+1>cmTC_76c52 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_5d431"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_5d431, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_5d431.dir\Debug\\" /Fd"cmTC_5d431.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_5d431.dir\Debug\BuildLog.htm”
+1>cmTC_5d431 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_12e0b"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_12e0b, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_12e0b.dir\Debug\\" /Fd"cmTC_12e0b.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_12e0b.dir\Debug\BuildLog.htm”
+1>cmTC_12e0b - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_4e00a"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_4e00a, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_4e00a.dir\Debug\\" /Fd"cmTC_4e00a.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   ..\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c
+1>CMAKE_SIZEOF_UNSIGNED_SHORT.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_4e00a.dir\Debug\BuildLog.htm”
+1>cmTC_4e00a - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_b4db9"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_b4db9, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_b4db9.dir\Debug\\" /Fd"cmTC_b4db9.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_b4db9.dir\Debug\BuildLog.htm”
+1>cmTC_b4db9 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_cd966"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_cd966, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_cd966.dir\Debug\\" /Fd"cmTC_cd966.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_cd966.dir\Debug\BuildLog.htm”
+1>cmTC_cd966 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file io.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_97463"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_97463, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_97463.dir\Debug\\" /Fd"cmTC_97463.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_97463.dir\Debug\BuildLog.htm”
+1>cmTC_97463 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file search.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_b1e3d"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_b1e3d, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_b1e3d.dir\Debug\\" /Fd"cmTC_b1e3d.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_b1e3d.dir\Debug\BuildLog.htm”
+1>cmTC_b1e3d - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_3de88"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_3de88, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_3de88.dir\Debug\\" /Fd"cmTC_3de88.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_3de88.dir\Debug\BuildLog.htm”
+1>cmTC_3de88 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_62fa5"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_62fa5, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_62fa5.dir\Debug\\" /Fd"cmTC_62fa5.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_62fa5.dir\Debug\BuildLog.htm”
+1>cmTC_62fa5 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_493b5"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_493b5, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_493b5.dir\Debug\\" /Fd"cmTC_493b5.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_493b5.dir\Debug\BuildLog.htm”
+1>cmTC_493b5 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_61f9c"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_61f9c, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_61f9c.dir\Debug\\" /Fd"cmTC_61f9c.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   ..\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c
+1>CMAKE_SIZEOF_UNSIGNED_SHORT.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_61f9c.dir\Debug\BuildLog.htm”
+1>cmTC_61f9c - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_c111e"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_c111e, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_c111e.dir\Debug\\" /Fd"cmTC_c111e.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_c111e.dir\Debug\BuildLog.htm”
+1>cmTC_c111e - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_6fc0c"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_6fc0c, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_6fc0c.dir\Debug\\" /Fd"cmTC_6fc0c.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_6fc0c.dir\Debug\BuildLog.htm”
+1>cmTC_6fc0c - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file io.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_fb03b"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_fb03b, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_fb03b.dir\Debug\\" /Fd"cmTC_fb03b.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_fb03b.dir\Debug\BuildLog.htm”
+1>cmTC_fb03b - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file search.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_7f994"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_7f994, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_7f994.dir\Debug\\" /Fd"cmTC_7f994.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_7f994.dir\Debug\BuildLog.htm”
+1>cmTC_7f994 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_03dec"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_03dec, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_03dec.dir\Debug\\" /Fd"cmTC_03dec.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_03dec.dir\Debug\BuildLog.htm”
+1>cmTC_03dec - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+

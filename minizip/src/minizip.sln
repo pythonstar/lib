@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "minizip", "minizip.vcproj", "{C610F50E-1013-46F0-AE20-4E918654B40F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release LIB|Win32 = Release LIB|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C610F50E-1013-46F0-AE20-4E918654B40F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C610F50E-1013-46F0-AE20-4E918654B40F}.Debug|Win32.Build.0 = Debug|Win32
+		{C610F50E-1013-46F0-AE20-4E918654B40F}.Release LIB|Win32.ActiveCfg = Release LIB|Win32
+		{C610F50E-1013-46F0-AE20-4E918654B40F}.Release LIB|Win32.Build.0 = Release LIB|Win32
+		{C610F50E-1013-46F0-AE20-4E918654B40F}.Release|Win32.ActiveCfg = Release|Win32
+		{C610F50E-1013-46F0-AE20-4E918654B40F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

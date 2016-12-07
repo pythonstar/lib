@@ -1,0 +1,183 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(非特定语言) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_NEUTRAL
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HTTPDOWNLOAD DIALOG  0, 0, 228, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Download"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Animate1",IDC_ANIMATE1,"SysAnimate32",ACS_TRANSPARENT,7,7,192,32
+    LTEXT           "",IDC_STATUS,7,47,214,8
+    LTEXT           "",IDC_FILESTATUS,7,60,214,8
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,74,214,10
+    LTEXT           "Estimated time left:",IDC_STATIC,7,91,60,8
+    LTEXT           "",IDC_TIMELEFT,79,91,142,8
+    LTEXT           "Transfer rate:",IDC_STATIC,7,104,43,8
+    LTEXT           "",IDC_TRANSFER_RATE,80,104,141,8
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,171,122,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_HTTPDOWNLOAD_ANIMATION AVI                     "res\\inetdownload.avi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_HTTPDOWNLOAD_FILESTATUS "%1 from %2"
+    IDS_HTTPDOWNLOAD_CONNECTED "Connected to %1"
+    IDS_HTTPDOWNLOAD_RESOLVING_NAME "Resolving name: %1"
+    IDS_HTTPDOWNLOAD_RESOLVED_NAME "Resolved name to %1"
+    IDS_HTTPDOWNLOAD_CONNECTING "Connecting to %1"
+    IDS_HTTPDOWNLOAD_REDIRECTING "Redirecting to %1"
+    IDS_HTTPDOWNLOAD_GETTING_FILE_INFORMATION "Getting file information"
+    IDS_HTTPDOWNLOAD_FAIL_PARSE_ERROR "An error occurred parsing the url: %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HTTPDOWNLOAD_GENERIC_ERROR 
+                            "An error occurred while attempting to download the file, Error:%1"
+    IDS_HTTPDOWNLOAD_FAIL_CONNECT_SERVER 
+                            "An error occurred connecting to the server, Error:%1"
+    IDS_HTTPDOWNLOAD_INVALID_SERVER_RESPONSE 
+                            "Failed to receive a valid response from the server"
+    IDS_HTTPDOWNLOAD_INVALID_HTTP_RESPONSE 
+                            "Failed to receive a valid HTTP response from the server"
+    IDS_HTTPDOWNLOAD_ERROR_READFILE 
+                            "An error occurred while downloading the file, Error:%1"
+    IDS_HTTPDOWNLOAD_PERCENTAGE "%1% of %2 Completed"
+    IDS_HTTPDOWNLOAD_RETREIVEING_FILE "Retrieving the file"
+    IDS_HTTPDOWNLOAD_OF     "%1 of %2"
+    IDS_HTTPDOWNLOAD_SECONDS "%1 sec"
+    IDS_HTTPDOWNLOAD_MINUTES "%1 min"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HTTPDOWNLOAD_MINUTES_AND_SECONDS "%1 min %2 sec"
+    IDS_HTTPDOWNLOAD_BYTES  "%1 Bytes"
+    IDS_HTTPDOWNLOAD_KILOBYTES "%1 KB"
+    IDS_HTTPDOWNLOAD_MEGABYTES "%1 MB"
+    IDS_HTTPDOWNLOAD_TIMELEFT "%1 (%2 copied)"
+    IDS_HTTPDOWNLOAD_BYTESPERSECOND "%1 Bytes/Sec"
+    IDS_HTTPDOWNLOAD_KILOBYTESPERSECOND "%1 KB/Sec"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HTTPDOWNLOAD_OK_TO_OVERWRITE 
+                            "The file '%1' already exists.\nDo you want to replace it?"
+    IDS_HTTPDOWNLOAD_FAIL_FILE_OPEN 
+                            "An error occured while opening the file to be downloaded, Error:%1"
+    IDS_HTTPDOWNLOAD_ABORTING_TRANSFER "Aborting transfer"
+END
+
+#endif    // 中文(非特定语言) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(爱尔兰) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENI)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_EIRE
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\commonres.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英语(爱尔兰) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\commonres.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

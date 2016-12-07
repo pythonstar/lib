@@ -1,0 +1,241 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...",                    IDM_FILE_OPEN
+        MENUITEM "&Close",                      IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       IDM_FILE_SAVE
+        MENUITEM "Save &As...",                 IDM_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&View",                       IDM_FILE_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDCANCEL
+    END
+    POPUP "&Resources"
+    BEGIN
+        MENUITEM "&Save",                       IDM_RES_SAVE
+        MENUITEM "Save &All Resources",         IDM_RES_SAVEALL
+        MENUITEM SEPARATOR
+        MENUITEM "Save &Text Script",           IDM_RES_SAVETEXT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Options",                    IDM_VIEW_OPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents",                   IDM_HELP_CONTENTS
+        MENUITEM "&About",                      IDM_HELP_ABOUT
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG DIALOGEX 0, 0, 379, 295
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+MENU IDR_MAINMENU
+FONT 9, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_XMIN,245,100,34,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_XMAX,245,119,34,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_COMPRESSED,280,30,66,8
+    LTEXT           "",IDC_FILELENGTH,280,43,66,8
+    LTEXT           "",IDC_FRAMECOUNT,280,55,66,8
+    LTEXT           "",IDC_VERSION,280,18,66,8
+    EDITTEXT        IDC_YMIN,314,100,34,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_YMAX,314,119,34,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Version",IDC_STATIC,222,17,24,8
+    LTEXT           "Compression",IDC_STATIC,222,29,41,8
+    LTEXT           "File Length",IDC_STATIC,222,42,36,8
+    LTEXT           "Frame Count",IDC_STATIC,222,55,41,8
+    LTEXT           "XMin",IDC_STATIC,222,103,17,8
+    LTEXT           "XMax",IDC_STATIC,222,122,19,8
+    LTEXT           "YMin",IDC_STATIC,291,103,17,8
+    LTEXT           "YMax",IDC_STATIC,291,122,19,8
+    EDITTEXT        IDC_BACKGROUND,285,151,47,14,ES_AUTOHSCROLL
+    LTEXT           "Background Color",IDC_STATIC,223,154,58,8
+    GROUPBOX        "SWF Info",IDC_STATIC,213,7,144,75,BS_CENTER
+    GROUPBOX        "Resources",IDC_STATIC,7,7,187,162,BS_CENTER
+    GROUPBOX        "Frame RECT",IDC_STATIC,213,85,144,58,BS_CENTER
+    LTEXT           "Frame Rate",IDC_STATIC,222,67,38,8
+    LTEXT           "",IDC_FRAMERATE,280,67,66,8
+    LISTBOX         IDC_FRAMETAGS,16,189,170,91,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Tag Info",IDC_STATIC,7,176,365,112,BS_CENTER
+    LTEXT           "",IDC_TAGINFO,193,189,170,91,SS_SUNKEN
+    CONTROL         "Tree1",IDC_RESTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | TVS_TRACKSELECT | 
+                    TVS_SINGLEEXPAND | WS_TABSTOP,15,19,170,141,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 196, 70
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 9, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "SWFRIP v 0.4",IDC_STATIC,79,15,58,9
+    CTEXT           "Wesley Hopper (hopperw2000@yahoo.com)",IDC_STATIC,7,36,
+                    182,10
+    CTEXT           "SWF and Flash are Trademarks of Macromedia, Inc.",
+                    IDC_STATIC,7,51,182,11
+    ICON            IDI_FLASH,IDC_STATIC,53,8,20,20
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 117, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Options"
+FONT 9, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,106,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,106,50,14
+    LTEXT           "Shape",IDC_STATIC,14,23,22,8
+    LTEXT           "Text",IDC_STATIC,14,60,15,8
+    COMBOBOX        IDC_SHAPEFORMAT,42,20,60,35,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Export Types",IDC_STATIC,7,7,103,93,BS_CENTER
+    COMBOBOX        IDC_TEXTFORMAT,42,58,60,38,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Image",IDC_STATIC,14,41,20,8
+    COMBOBOX        IDC_IMAGEFORMAT,42,39,60,52,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Frame",IDC_STATIC,14,80,20,8
+    COMBOBOX        IDC_FRAMEFORMAT,42,77,60,38,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_FLASH               ICON    DISCARDABLE     "resource\\flash.ico"
+IDI_FLASH2              ICON    DISCARDABLE     "resource\\flash2.ico"
+IDI_SHAPE               ICON    DISCARDABLE     "resource\\shape.ico"
+IDI_IMAGE               ICON    DISCARDABLE     "resource\\image.ico"
+IDI_MORPH               ICON    DISCARDABLE     "resource\\morph.ico"
+IDI_TEXT                ICON    DISCARDABLE     "resource\\text.ico"
+IDI_SOUND               ICON    DISCARDABLE     "resource\\sound.ico"
+IDI_BUTTON              ICON    DISCARDABLE     "resource\\button.ico"
+IDI_SPRITE              ICON    DISCARDABLE     "resource\\sprite.ico"
+IDI_VIDEO               ICON    DISCARDABLE     "resource\\video.ico"
+IDI_FRAME               ICON    DISCARDABLE     "resource\\frame.ico"
+IDI_FONT                ICON    DISCARDABLE     "resource\\font.ico"
+IDI_SCRIPT              ICON    DISCARDABLE     "resource\\script.ico"
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

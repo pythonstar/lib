@@ -1,0 +1,17 @@
+	COfficeXPMenu m_popmenu;
+	m_popmenu.LoadMenu(IDR_MENU_ADD_DELETE);	
+	m_popmenu.SetType(TYPE_XP);
+	CMenu *psub = (CMenu *)m_popmenu.GetSubMenu(0);
+	POINT pt;
+	GetCursorPos(&pt);
+	DWORD dwID =psub->TrackPopupMenu((TPM_LEFTALIGN|TPM_RIGHTBUTTON|TPM_RETURNCMD),
+		pt.x,pt.y, this);
+	if (dwID==ID_ADD_ITEM)
+	{
+		//...
+	}
+	else if (dwID==ID_DEL_ITEM)
+	{
+		//...
+	}
+	m_popmenu.DestroyMenu();

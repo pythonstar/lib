@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SkinSharpDemo - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/SkinSharpDemo.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\Ö£±ù\×ÀÃæ\Retail1.0\Trial\SkinH_VC_Trial\Demo\SkinSharpDemo\SkinSharpDemo.rc"" 
+Creating temporary file "C:\DOCUME~1\Ö£±ù\LOCALS~1\Temp\RSP124D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/SkinSharpDemo.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Ö£±ù\×ÀÃæ\Retail1.0\Trial\SkinH_VC_Trial\Demo\SkinSharpDemo\DemoDlg1.cpp"
+"C:\Documents and Settings\Ö£±ù\×ÀÃæ\Retail1.0\Trial\SkinH_VC_Trial\Demo\SkinSharpDemo\DemoDlg2.cpp"
+"C:\Documents and Settings\Ö£±ù\×ÀÃæ\Retail1.0\Trial\SkinH_VC_Trial\Demo\SkinSharpDemo\DemoDlg3.cpp"
+"C:\Documents and Settings\Ö£±ù\×ÀÃæ\Retail1.0\Trial\SkinH_VC_Trial\Demo\SkinSharpDemo\DemoDlg4.cpp"
+"C:\Documents and Settings\Ö£±ù\×ÀÃæ\Retail1.0\Trial\SkinH_VC_Trial\Demo\SkinSharpDemo\DemoDlg5.cpp"
+"C:\Documents and Settings\Ö£±ù\×ÀÃæ\Retail1.0\Trial\SkinH_VC_Trial\Demo\SkinSharpDemo\DemoDlg6.cpp"
+"C:\Documents and Settings\Ö£±ù\×ÀÃæ\Retail1.0\Trial\SkinH_VC_Trial\Demo\SkinSharpDemo\SkinSharpDemo.cpp"
+"C:\Documents and Settings\Ö£±ù\×ÀÃæ\Retail1.0\Trial\SkinH_VC_Trial\Demo\SkinSharpDemo\SkinSharpDemoDlg.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\Ö£±ù\LOCALS~1\Temp\RSP124D.tmp"" 
+Creating temporary file "C:\DOCUME~1\Ö£±ù\LOCALS~1\Temp\RSP124E.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/SkinSharpDemo.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Ö£±ù\×ÀÃæ\Retail1.0\Trial\SkinH_VC_Trial\Demo\SkinSharpDemo\StdAfx.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\Ö£±ù\LOCALS~1\Temp\RSP124E.tmp"" 
+Creating temporary file "C:\DOCUME~1\Ö£±ù\LOCALS~1\Temp\RSP124F.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/SkinSharpDemo.pdb" /machine:I386 /out:"../../Bin/SkinSharpDemo.exe" 
+".\Release\DemoDlg1.obj"
+".\Release\DemoDlg2.obj"
+".\Release\DemoDlg3.obj"
+".\Release\DemoDlg4.obj"
+".\Release\DemoDlg5.obj"
+".\Release\DemoDlg6.obj"
+".\Release\SkinSharpDemo.obj"
+".\Release\SkinSharpDemoDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\SkinSharpDemo.res"
+]
+Creating command line "link.exe @"C:\DOCUME~1\Ö£±ù\LOCALS~1\Temp\RSP124F.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DemoDlg1.cpp
+DemoDlg2.cpp
+DemoDlg3.cpp
+DemoDlg4.cpp
+DemoDlg5.cpp
+DemoDlg6.cpp
+SkinSharpDemo.cpp
+SkinSharpDemoDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SkinSharpDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

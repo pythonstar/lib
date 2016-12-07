@@ -1,0 +1,4 @@
+dowload from:http://msinttypes.googlecode.com/files/msinttypes-r26.zip
+
+copy to your vs include directory,eg:C:\Program Files\Microsoft Visual Studio 9.0\VC\include
+

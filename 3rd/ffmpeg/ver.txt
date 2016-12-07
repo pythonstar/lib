@@ -1,0 +1,4 @@
+ffmpeg-20140327-git-62094e2-win32
+
+from:
+http://ffmpeg.zeranoe.com/builds/win32/dev/

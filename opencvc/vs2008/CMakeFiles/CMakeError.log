@@ -1,0 +1,534 @@
+Determining if the include file stdint.h exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_bafeb"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_bafeb, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_bafeb.dir\Debug\\" /Fd"cmTC_bafeb.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>.\CheckIncludeFile.c(1) : fatal error C1083: 无法打开包括文件:“stdint.h”: No such file or directory
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_bafeb.dir\Debug\BuildLog.htm”
+1>cmTC_bafeb - 1 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_4c161"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_4c161, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_4c161.dir\Debug\\" /Fd"cmTC_4c161.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\TestEndianess.c
+1>TestEndianess.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_4c161.dir\Debug\BuildLog.htm”
+1>cmTC_4c161 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function fseeko exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_70cf7"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_70cf7, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "CHECK_FUNCTION_EXISTS=fseeko" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_70cf7.dir\Debug\\" /Fd"cmTC_70cf7.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   "D:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckFunctionExists.c"
+1>CheckFunctionExists.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _fseeko，该符号在函数 _main 中被引用
+1>F:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\Debug\cmTC_70cf7.exe : fatal error LNK1120: 1 个无法解析的外部命令
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_70cf7.dir\Debug\BuildLog.htm”
+1>cmTC_70cf7 - 2 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_b3e2d"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_b3e2d, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_b3e2d.dir\Debug\\" /Fd"cmTC_b3e2d.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>.\CheckIncludeFile.c(1) : fatal error C1083: 无法打开包括文件:“unistd.h”: No such file or directory
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_b3e2d.dir\Debug\BuildLog.htm”
+1>cmTC_b3e2d - 1 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining size of off64_t failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_456a4"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_456a4, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_456a4.dir\Debug\\" /Fd"cmTC_456a4.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   ..\CheckTypeSize\OFF64_T.c
+1>OFF64_T.c
+1>..\CheckTypeSize\OFF64_T.c(18) : error C2065: “off64_t”: 未声明的标识符
+1>..\CheckTypeSize\OFF64_T.c(19) : error C2065: “off64_t”: 未声明的标识符
+1>..\CheckTypeSize\OFF64_T.c(20) : error C2065: “off64_t”: 未声明的标识符
+1>..\CheckTypeSize\OFF64_T.c(21) : error C2065: “off64_t”: 未声明的标识符
+1>..\CheckTypeSize\OFF64_T.c(22) : error C2065: “off64_t”: 未声明的标识符
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_456a4.dir\Debug\BuildLog.htm”
+1>cmTC_456a4 - 5 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+F:/open/lib/opencvc/vs2008/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function jbg_newlen exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_e32c6"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_e32c6, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "CHECK_FUNCTION_EXISTS=jbg_newlen" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_e32c6.dir\Debug\\" /Fd"cmTC_e32c6.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   "D:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckFunctionExists.c"
+1>CheckFunctionExists.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _jbg_newlen，该符号在函数 _main 中被引用
+1>F:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\Debug\cmTC_e32c6.exe : fatal error LNK1120: 1 个无法解析的外部命令
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_e32c6.dir\Debug\BuildLog.htm”
+1>cmTC_e32c6 - 2 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the function mmap exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_5f0a6"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_5f0a6, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "CHECK_FUNCTION_EXISTS=mmap" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_5f0a6.dir\Debug\\" /Fd"cmTC_5f0a6.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   "D:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckFunctionExists.c"
+1>CheckFunctionExists.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _mmap，该符号在函数 _main 中被引用
+1>F:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\Debug\cmTC_5f0a6.exe : fatal error LNK1120: 1 个无法解析的外部命令
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_5f0a6.dir\Debug\BuildLog.htm”
+1>cmTC_5f0a6 - 2 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_a2e8c"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_a2e8c, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_a2e8c.dir\Debug\\" /Fd"cmTC_a2e8c.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>.\CheckIncludeFile.c(1) : fatal error C1083: 无法打开包括文件:“unistd.h”: No such file or directory
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_a2e8c.dir\Debug\BuildLog.htm”
+1>cmTC_a2e8c - 1 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file stdint.h exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_b92c7"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_b92c7, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_b92c7.dir\Debug\\" /Fd"cmTC_b92c7.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>.\CheckIncludeFile.c(1) : fatal error C1083: 无法打开包括文件:“stdint.h”: No such file or directory
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_b92c7.dir\Debug\BuildLog.htm”
+1>cmTC_b92c7 - 1 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_a1320"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_a1320, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_a1320.dir\Debug\\" /Fd"cmTC_a1320.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\TestEndianess.c
+1>TestEndianess.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>正在嵌入清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_a1320.dir\Debug\BuildLog.htm”
+1>cmTC_a1320 - 0 个错误，0 个警告
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function fseeko exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_5d3d3"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_5d3d3, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "CHECK_FUNCTION_EXISTS=fseeko" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_5d3d3.dir\Debug\\" /Fd"cmTC_5d3d3.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   "D:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckFunctionExists.c"
+1>CheckFunctionExists.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _fseeko，该符号在函数 _main 中被引用
+1>F:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\Debug\cmTC_5d3d3.exe : fatal error LNK1120: 1 个无法解析的外部命令
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_5d3d3.dir\Debug\BuildLog.htm”
+1>cmTC_5d3d3 - 2 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_52769"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_52769, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_52769.dir\Debug\\" /Fd"cmTC_52769.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>.\CheckIncludeFile.c(1) : fatal error C1083: 无法打开包括文件:“unistd.h”: No such file or directory
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_52769.dir\Debug\BuildLog.htm”
+1>cmTC_52769 - 1 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining size of off64_t failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_9e3d7"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_9e3d7, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_9e3d7.dir\Debug\\" /Fd"cmTC_9e3d7.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   ..\CheckTypeSize\OFF64_T.c
+1>OFF64_T.c
+1>..\CheckTypeSize\OFF64_T.c(18) : error C2065: “off64_t”: 未声明的标识符
+1>..\CheckTypeSize\OFF64_T.c(19) : error C2065: “off64_t”: 未声明的标识符
+1>..\CheckTypeSize\OFF64_T.c(20) : error C2065: “off64_t”: 未声明的标识符
+1>..\CheckTypeSize\OFF64_T.c(21) : error C2065: “off64_t”: 未声明的标识符
+1>..\CheckTypeSize\OFF64_T.c(22) : error C2065: “off64_t”: 未声明的标识符
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_9e3d7.dir\Debug\BuildLog.htm”
+1>cmTC_9e3d7 - 5 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+F:/open/lib/opencvc/vs2008/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function jbg_newlen exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_59079"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_59079, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "CHECK_FUNCTION_EXISTS=jbg_newlen" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_59079.dir\Debug\\" /Fd"cmTC_59079.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   "D:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckFunctionExists.c"
+1>CheckFunctionExists.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _jbg_newlen，该符号在函数 _main 中被引用
+1>F:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\Debug\cmTC_59079.exe : fatal error LNK1120: 1 个无法解析的外部命令
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_59079.dir\Debug\BuildLog.htm”
+1>cmTC_59079 - 2 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the function mmap exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_dbd9e"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_dbd9e, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "CHECK_FUNCTION_EXISTS=mmap" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_dbd9e.dir\Debug\\" /Fd"cmTC_dbd9e.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   "D:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckFunctionExists.c"
+1>CheckFunctionExists.c
+1>正在编译资源清单...
+1>Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>正在链接...
+1>CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _mmap，该符号在函数 _main 中被引用
+1>F:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\Debug\cmTC_dbd9e.exe : fatal error LNK1120: 1 个无法解析的外部命令
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_dbd9e.dir\Debug\BuildLog.htm”
+1>cmTC_dbd9e - 2 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: F:/open/lib/opencvc/vs2008/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Microsoft Visual Studio 9.0/Common7/IDE/devenv.com" "CMAKE_TRY_COMPILE.sln" "/build" "Debug" "/project" "cmTC_b5f8c"
+
+Microsoft (R) Visual Studio 9.0.30729.1 版。
+版权所有(C) Microsoft Corp。保留所有权利。
+
+Visual Studio 试用版的评估期 84 天后结束。
+1>------ 已启动生成: 项目: cmTC_b5f8c, 配置: Debug Win32 ------
+1>正在编译...
+1>用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 15.00.30729.01 版
+1>版权所有(C) Microsoft Corporation。保留所有权利。
+1>cl /Od /Oi /D "WIN32" /D "_WINDOWS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "_SCL_SECURE_NO_WARNINGS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Gy /arch:SSE2 /fp:fast /Fo"cmTC_b5f8c.dir\Debug\\" /Fd"cmTC_b5f8c.dir\Debug\vc90.pdb" /W3 /c /Zi /TC   /bigobj /MP4
+1>   .\CheckIncludeFile.c
+1>CheckIncludeFile.c
+1>.\CheckIncludeFile.c(1) : fatal error C1083: 无法打开包括文件:“unistd.h”: No such file or directory
+1>生成日志保存在“file://f:\open\lib\opencvc\vs2008\CMakeFiles\CMakeTmp\cmTC_b5f8c.dir\Debug\BuildLog.htm”
+1>cmTC_b5f8c - 1 个错误，0 个警告
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
+
+

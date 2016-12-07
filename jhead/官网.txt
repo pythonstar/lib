@@ -1,0 +1,6 @@
+开源项目 Exif Jpeg header manipulation tool:
+
+http://www.sentex.net/~mwandel/jhead/
+
+
+当前使用版本：2.96 
