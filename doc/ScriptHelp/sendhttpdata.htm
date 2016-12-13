@@ -1,0 +1,131 @@
+<html><head>
+<meta http-equiv='Content-Type' content='text/html' charset='gb2312'>
+<link rel='stylesheet' type='text/css' href='MSDN.css'>
+<TITLE>sendhttpdata</TITLE>
+<xml>
+<MSHelp:TOCTitle Title="sendhttpdata"/>
+<MSHelp:RLTitle Title="sendhttpdata"/>
+<MSHelp:Keyword Index="K" Term="sendhttpdata"/>
+<MSHelp:Keyword Index="A" Term="sendhttpdata"/>
+<MSHelp:Attr Name="DevelopmentPhase" Value="Feature"/>
+<MSHelp:Attr Name="DocSet" Value="kbwcedoc"/>
+<MSHelp:Attr Name="Locale" Value="kbEnglish"/>
+<MSHelp:Attr Name="Product" Value="kbwince"/>
+<MSHelp:Attr Name="ProductVers" Value="kbceplat50"/>
+<MSHelp:Attr Name="Source" Value="Documentation"/>
+<MSHelp:Attr Name="Status" Value="Same"/>
+
+<MSHelp:Attr Name="TargetOS" Value="WinCE"/>
+<MSHelp:Attr Name="TargetOSVers" Value="kbwce50"/>
+<MSHelp:Attr Name="TopicType" Value="apiref"/>
+<MSHelp:Attr Name="Filename" Value="process_threads_reference.doc"/>
+<MSHelp:Attr Name="ContainsCode" Value="False"/>
+<MSHelp:Attr Name="ContainsRegistryKeys" Value="False"/>
+<MSHelp:Attr Name="APIName" Value="sendhttpdata"/>
+<MSHelp:Attr Name="APIType" Value="LibDef"/>
+<MSHelp:Attr Name="APILocation" Value="Coredll.lib"/>
+<MSHelp:Attr Name="PBFeature" Value="CORE"/>
+<MSHelp:Attr Name="PBOnly" Value="False"/>
+</xml>
+<SCRIPT SRC="../scripts/dtuelink.js"></SCRIPT><META NAME="msdnID" CONTENT="_3002588"></HEAD>
+<body topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>
+<!--BANNER TITLE START-->star-Lua脚本插件帮助文档<!--BANNER TITLE END-->
+</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="sendhttpdata"></A>sendhttpdata</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+<DIV id="nstext" valign="bottom">
+
+<P>该函数通过POST或者GET方式请求服务器数据</P>
+
+<PRE class="syntax"><B>boolean, string sendhttpdata(</B>
+  string host
+  string path
+  string header
+  string data
+  boolean needdecode
+  number postorget
+<B>)</B></PRE>
+
+
+<H4 class="dtH4">参数</H4>
+<DL>
+<DT><I>string</I></DT>
+<DD>host</dd>
+</DL>
+<DL>
+<DT><I>string</I></DT>
+<DD>子路径</dd>
+</DL>
+<DL>
+<DT><I>string</I></DT>
+<DD>请求头</dd>
+</DL>
+<DL>
+<DT><I>string</I></DT>
+<DD>发送的数据</dd>
+</DL>
+<DL>
+<DT><I>boolean</I></DT>
+<DD>指示返回的数据是否需要按gzip解包，默认为true</dd>
+</DL>
+<DL>
+<DT><I>number</I></DT>
+<DD>只是是以POST方式还是GET方式，默认为POST方式</dd>
+<DD>HTTP_VERB_POST      = 0,<DD>
+<DD>HTTP_VERB_GET       = 1,<DD>
+</DL>
+<H4 class="dtH4">返回值</H4>
+<DL>
+<DT><I>string</I></DT>
+<DD>
+返回请求的数据，空串为''，不返回null
+</dd>
+</DL>
+
+<H4 class="dtH4">示例</H4>
+<PRE class="syntax">
+require 'star'
+
+
+HEADERS = [[
+Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+Origin: http://www.xxxxxxx.com
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://www.xxxxxxx.com/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+Cookie:xmHotwordsFbablabalabala
+]]
+
+data = 'toname='..nick..'&content='..'HI, 你好'
+data = star.encodeurlutf8(data)
+star.sendhttpdata('www.xxxxxxx.com', 'msg/create.php', HEADERS, data)
+</PRE>
+<H4 class="dtH4">相关</H4>
+<DL>
+<A HREF="gethtml.htm">gethtml</A>
+<A HREF="sendhttpdata.htm">sendhttpdata</A>
+<A HREF="urldownload2str.htm">urldownload2str</A>
+</DL>
+
+<div class="footer"><hr></div>
+<A HREF="index.htm">首页</A>
+
+</div>
+</body>
+</html>

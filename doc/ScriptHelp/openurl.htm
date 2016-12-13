@@ -1,0 +1,108 @@
+<html><head>
+<meta http-equiv='Content-Type' content='text/html' charset='gb2312'>
+<link rel='stylesheet' type='text/css' href='MSDN.css'>
+<TITLE>openurl</TITLE>
+<xml>
+<MSHelp:TOCTitle Title="openurl"/>
+<MSHelp:RLTitle Title="openurl"/>
+<MSHelp:Keyword Index="K" Term="openurl"/>
+<MSHelp:Keyword Index="A" Term="openurl"/>
+<MSHelp:Attr Name="DevelopmentPhase" Value="Feature"/>
+<MSHelp:Attr Name="DocSet" Value="kbwcedoc"/>
+<MSHelp:Attr Name="Locale" Value="kbEnglish"/>
+<MSHelp:Attr Name="Product" Value="kbwince"/>
+<MSHelp:Attr Name="ProductVers" Value="kbceplat50"/>
+<MSHelp:Attr Name="Source" Value="Documentation"/>
+<MSHelp:Attr Name="Status" Value="Same"/>
+
+<MSHelp:Attr Name="TargetOS" Value="WinCE"/>
+<MSHelp:Attr Name="TargetOSVers" Value="kbwce50"/>
+<MSHelp:Attr Name="TopicType" Value="apiref"/>
+<MSHelp:Attr Name="Filename" Value="process_threads_reference.doc"/>
+<MSHelp:Attr Name="ContainsCode" Value="False"/>
+<MSHelp:Attr Name="ContainsRegistryKeys" Value="False"/>
+<MSHelp:Attr Name="APIName" Value="openurl"/>
+<MSHelp:Attr Name="APIType" Value="LibDef"/>
+<MSHelp:Attr Name="APILocation" Value="Coredll.lib"/>
+<MSHelp:Attr Name="PBFeature" Value="CORE"/>
+<MSHelp:Attr Name="PBOnly" Value="False"/>
+</xml>
+<SCRIPT SRC="../scripts/dtuelink.js"></SCRIPT><META NAME="msdnID" CONTENT="_3002588"></HEAD>
+<body topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>
+<!--BANNER TITLE START-->star-Lua脚本插件帮助文档<!--BANNER TITLE END-->
+</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="openurl"></A>openurl</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+<DIV id="nstext" valign="bottom">
+
+<P>该函数通过调用ShellExecute("open")方式打开指定路径，若失败继续调用WinExec打开。</P>
+
+<PRE class="syntax"><B>boolean, string openurl(</B>
+  string url
+  string filepath
+<B>)</B></PRE>
+
+
+<H4 class="dtH4">参数</H4>
+<DL>
+<DT><I>string</I></DT>
+<DD>网址、文件路径、程序路径等</dd>
+</DL>
+<DL>
+<DT><I>number</I></DT>
+<DD>显示方式，默认为SW_SHOWNORMAL</dd>
+<PRE class="syntax">
+#define SW_HIDE             0
+#define SW_SHOWNORMAL       1
+#define SW_NORMAL           1
+#define SW_SHOWMINIMIZED    2
+#define SW_SHOWMAXIMIZED    3
+#define SW_MAXIMIZE         3
+#define SW_SHOWNOACTIVATE   4
+#define SW_SHOW             5
+#define SW_MINIMIZE         6
+#define SW_SHOWMINNOACTIVE  7
+#define SW_SHOWNA           8
+#define SW_RESTORE          9
+#define SW_SHOWDEFAULT      10
+#define SW_FORCEMINIMIZE    11
+#define SW_MAX              11
+</PRE>
+</DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL>
+<DT><I>boolean</I></DT>
+<DD>
+true表示成功，false表示失败</dd>
+</DL>
+<H4 class="dtH4">示例</H4>
+<PRE class="syntax">
+require 'star'
+success = star.openurl('www.baidu.com')
+</PRE>
+<H4 class="dtH4">相关</H4>
+<DL>
+<A HREF="createprocess.htm">open</A>
+<A HREF="createprocess.htm">run</A>
+<A HREF="createprocess.htm">createprocess</A>
+</DL>
+
+<div class="footer"><hr></div>
+<A HREF="index.htm">首页</A>
+
+</div>
+</body>
+</html>

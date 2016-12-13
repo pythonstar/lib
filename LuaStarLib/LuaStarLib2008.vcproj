@@ -42,7 +42,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="F:\open\lib;..\luabind;..\lua"
+				AdditionalIncludeDirectories="F:\pythonstar\lib;F:\pythonstar\lib\thirdparty"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;MYLUALIB_EXPORTS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -65,7 +65,7 @@
 				Name="VCLinkerTool"
 				OutputFile="$(OutDir)$(ProjectName)D.dll"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="F:\open\lib\2008static"
+				AdditionalLibraryDirectories="F:\pythonstar\lib\thirdparty\2008static"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				RandomizedBaseAddress="1"
@@ -120,7 +120,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="F:\open\lib;..\luabind;..\lua"
+				AdditionalIncludeDirectories="F:\pythonstar\lib;F:\pythonstar\lib\thirdparty"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;MYLUALIB_EXPORTS"
 				RuntimeLibrary="0"
 				UsePrecompiledHeader="2"
@@ -141,7 +141,7 @@
 				Name="VCLinkerTool"
 				OutputFile="$(OutDir)$(ProjectName).dll"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="F:\open\lib\2008static"
+				AdditionalLibraryDirectories="F:\pythonstar\lib\thirdparty\2008static"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"
@@ -198,7 +198,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="F:\open\lib\lua;F:\open\lib"
+				AdditionalIncludeDirectories="F:\pythonstar\lib;F:\pythonstar\lib\thirdparty"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -262,7 +262,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="F:\open\lib\lua;F:\open\lib"
+				AdditionalIncludeDirectories="F:\pythonstar\lib;F:\pythonstar\lib\thirdparty"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				RuntimeLibrary="0"
 				UsePrecompiledHeader="2"
@@ -382,22 +382,6 @@
 					RelativePath="..\starlib\Common\common.h"
 					>
 				</File>
-				<File
-					RelativePath="..\StarLib\Common\zipHelper.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\StarLib\Common\zipHelper.h"
-					>
-				</File>
-				<File
-					RelativePath="..\StarLib\Common\zipHelperEx.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\StarLib\Common\zipHelperEx.h"
-					>
-				</File>
 			</Filter>
 			<Filter
 				Name="gzipDecoder"
@@ -460,22 +444,6 @@
 				</File>
 				<File
 					RelativePath="..\starlib\net\httppost.h"
-					>
-				</File>
-			</Filter>
-		</Filter>
-		<Filter
-			Name="Èý·½¿â"
-			>
-			<Filter
-				Name="xls"
-				>
-				<File
-					RelativePath="..\StarLib\xls\XlsOperator.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\StarLib\xls\XlsOperator.h"
 					>
 				</File>
 			</Filter>

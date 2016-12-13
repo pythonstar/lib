@@ -1,0 +1,175 @@
+<html><head>
+<meta http-equiv='Content-Type' content='text/html' charset='gb2312'>
+<link rel='stylesheet' type='text/css' href='MSDN.css'>
+<TITLE>msgbox</TITLE>
+<xml>
+<MSmsgbox:TOCTitle Title="msgbox"/>
+<MSmsgbox:RLTitle Title="msgbox"/>
+<MSmsgbox:Keyword Index="K" Term="msgbox"/>
+<MSmsgbox:Keyword Index="A" Term="msgbox"/>
+<MSmsgbox:Attr Name="DevelopmentPhase" Value="Feature"/>
+<MSmsgbox:Attr Name="DocSet" Value="kbwcedoc"/>
+<MSmsgbox:Attr Name="Locale" Value="kbEnglish"/>
+<MSmsgbox:Attr Name="Product" Value="kbwince"/>
+<MSmsgbox:Attr Name="ProductVers" Value="kbceplat50"/>
+<MSmsgbox:Attr Name="Source" Value="Documentation"/>
+<MSmsgbox:Attr Name="Status" Value="Same"/>
+
+<MSmsgbox:Attr Name="TargetOS" Value="WinCE"/>
+<MSmsgbox:Attr Name="TargetOSVers" Value="kbwce50"/>
+<MSmsgbox:Attr Name="TopicType" Value="apiref"/>
+<MSmsgbox:Attr Name="Filename" Value="process_threads_reference.doc"/>
+<MSmsgbox:Attr Name="ContainsCode" Value="False"/>
+<MSmsgbox:Attr Name="ContainsRegistryKeys" Value="False"/>
+<MSmsgbox:Attr Name="APIName" Value="msgbox"/>
+<MSmsgbox:Attr Name="APIType" Value="LibDef"/>
+<MSmsgbox:Attr Name="APILocation" Value="Coredll.lib"/>
+<MSmsgbox:Attr Name="PBFeature" Value="CORE"/>
+<MSmsgbox:Attr Name="PBOnly" Value="False"/>
+</xml>
+<SCRIPT SRC="../scripts/dtuelink.js"></SCRIPT><META NAME="msdnID" CONTENT="_3002588"></HEAD>
+<body topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>
+<!--BANNER TITLE START-->star-Lua脚本插件帮助文档<!--BANNER TITLE END-->
+</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="msgbox"></A>msgbox</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+<DIV id="nstext" valign="bottom">
+
+<P>该函数用以弹出系统对话框</P>
+
+<PRE class="syntax">
+<B>number msgbox(
+	var text,
+	var caption,
+	number utype
+)</B></PRE>
+
+
+<H4 class="dtH4">参数</H4>
+<DL>
+<DT><I>var</I></DT>
+<DD>任何类型，将被转换为字符串后作为对话框内容显示</dd>
+</DL>
+<DL>
+<DT><I>var</I></DT>
+<DD>任何类型，将被转换为字符串后作为对话框标题显示，该参数可省略，默认为：提示</dd>
+</DL>
+<DL>
+<DT><I>number</I></DT>
+<DD>对话框显示显示方式，意义如下。该参数可省略，默认为MB_OK</dd>
+<PRE class="syntax">
+/*
+ * MessageBox() Flags
+ */
+#define MB_OK                       0x00000000L
+#define MB_OKCANCEL                 0x00000001L
+#define MB_ABORTRETRYIGNORE         0x00000002L
+#define MB_YESNOCANCEL              0x00000003L
+#define MB_YESNO                    0x00000004L
+#define MB_RETRYCANCEL              0x00000005L
+#if(WINVER >= 0x0500)
+#define MB_CANCELTRYCONTINUE        0x00000006L
+#endif /* WINVER >= 0x0500 */
+
+
+#define MB_ICONHAND                 0x00000010L
+#define MB_ICONQUESTION             0x00000020L
+#define MB_ICONEXCLAMATION          0x00000030L
+#define MB_ICONASTERISK             0x00000040L
+
+#if(WINVER >= 0x0400)
+#define MB_USERICON                 0x00000080L
+#define MB_ICONWARNING              MB_ICONEXCLAMATION
+#define MB_ICONERROR                MB_ICONHAND
+#endif /* WINVER >= 0x0400 */
+
+#define MB_ICONINFORMATION          MB_ICONASTERISK
+#define MB_ICONSTOP                 MB_ICONHAND
+
+#define MB_DEFBUTTON1               0x00000000L
+#define MB_DEFBUTTON2               0x00000100L
+#define MB_DEFBUTTON3               0x00000200L
+#if(WINVER >= 0x0400)
+#define MB_DEFBUTTON4               0x00000300L
+#endif /* WINVER >= 0x0400 */
+
+#define MB_APPLMODAL                0x00000000L
+#define MB_SYSTEMMODAL              0x00001000L
+#define MB_TASKMODAL                0x00002000L
+#if(WINVER >= 0x0400)
+#define MB_HELP                     0x00004000L // Help Button
+#endif /* WINVER >= 0x0400 */
+
+#define MB_NOFOCUS                  0x00008000L
+#define MB_SETFOREGROUND            0x00010000L
+#define MB_DEFAULT_DESKTOP_ONLY     0x00020000L
+
+#if(WINVER >= 0x0400)
+#define MB_TOPMOST                  0x00040000L
+#define MB_RIGHT                    0x00080000L
+#define MB_RTLREADING               0x00100000L
+
+#endif /* WINVER >= 0x0400 */
+
+#ifdef _WIN32_WINNT
+#if (_WIN32_WINNT >= 0x0400)
+#define MB_SERVICE_NOTIFICATION          0x00200000L
+#else
+#define MB_SERVICE_NOTIFICATION          0x00040000L
+#endif
+#define MB_SERVICE_NOTIFICATION_NT3X     0x00040000L
+#endif
+
+#define MB_TYPEMASK                 0x0000000FL
+#define MB_ICONMASK                 0x000000F0L
+#define MB_DEFMASK                  0x00000F00L
+#define MB_MODEMASK                 0x00003000L
+#define MB_MISCMASK                 0x0000C000L
+</PRE>
+</DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL>
+<DT><I>number</I></DT>
+<PRE class="syntax">
+#define IDOK            1
+#define IDCANCEL        2
+#define IDABORT         3
+#define IDRETRY         4
+#define IDIGNORE        5
+#define IDYES           6
+#define IDNO            7
+#define IDCLOSE         8
+#define IDHELP          9
+#define IDTRYAGAIN      10
+#define IDCONTINUE      11
+#define IDTIMEOUT	    32000
+</PRE>
+</DL>
+
+<H4 class="dtH4">示例</H4>
+<PRE class="syntax">
+require 'star'
+local IDOK = 1
+if star.msgbox(a)==IDOK then
+end
+</PRE>
+
+<div class="footer"><hr></div>
+<A HREF="index.htm">首页</A>
+
+</div>
+</body>
+</html>

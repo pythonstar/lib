@@ -33,8 +33,6 @@ int getfilesize(lua_State* L);
 #ifdef _USRDLL
 
 int _crc32(lua_State *L);
-int crc32file(lua_State *L);
-int zipfile(lua_State *L);
 
 int test(lua_State *L);
 int help(lua_State *L);

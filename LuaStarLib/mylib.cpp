@@ -1,17 +1,5 @@
 #include "stdafx.h"
 #include "mylib.h"
-
-#ifdef _USRDLL
-#include <luabind/luabind.hpp>
-#include <luabind/function.hpp>
-#include <luabind/class.hpp>
-using namespace luabind;
-
-#include <StarLib/xls/XlsOperator.h>
-#include <StarLib/File/SimpleIni.h>
-#include <StarLib/Common/zipHelperEx.h>
-#endif
-
 #include <StarLib/File/File.h>
 #include <StarLib/Common/common.h>
 #include <StarLib/Common/zipHelper.h>
@@ -45,7 +33,6 @@ extern "C" {
 #ifdef _USRDLL
 #pragma comment(lib,"zlibD.lib")
 #pragma comment(lib,"zipD.lib")
-#pragma comment(lib,"luabindD.lib")
 #endif
 //#pragma comment(lib,"User32.lib")
 #else
@@ -53,7 +40,6 @@ extern "C" {
 #ifdef _USRDLL
 #pragma comment(lib,"zlib.lib")
 #pragma comment(lib,"zip.lib")
-#pragma comment(lib,"luabind.lib")
 #endif
 #endif
 
@@ -69,9 +55,7 @@ static const struct luaL_reg starlib [] = {
 	{"trim", trim},
 	{"utf8s2ms", utf8s2ms},
 	{"reversefind", reversefind},
-	{"DecodeEscapeUsequence", unescapeunicode},
 	{"unescapeunicode", unescapeunicode},
-	{"RemoveFileNameInvalidChar", filterinvalidfilename},
 	{"filterinvalidfilename", filterinvalidfilename},
 	{"unescapexml", unescapexml},
 	{"encodeurlutf8", encodeurlutf8},
@@ -119,51 +103,12 @@ static const struct luaL_reg starlib [] = {
 	{"getprocaddress", getprocaddress},
 
 	{"crc32", _crc32},
-	{"crc32file", crc32file},
-	{"zipfile", zipfile},
 #endif
 
 	{NULL, NULL} /* sentinel */ 
 };
 
 //////////////////////////////////////////////////////////////////////////
-
-
-
-/*
-require "star"
-require "libxl"
-
-xls = star.XLS()
-if xls:create() then
-	xls:addtitle('1')
-	xls:addtitle('2')
-	xls:addtitle('3')
-	xls:writestr(2,0,'123')
-	xls:writestr(2,1,'123')
-	xls:writestr(3,2,'123')
-	xls:save('d:/2.xls')
-else
-	print(xls:error())
-end
-
-//////////////////////////////////////////////////////////////////////////
-require "star"
-
-dir = star.getluapath()
-ini = star.INI(dir..'config.ini')
-ini:setint('main','x',10)
-print(ini:getint('main','x',0))
-ini:setstring('main','h','11'..1001)
-print(ini:getstring('main','h',''))
-
-//////////////////////////////////////////////////////////////////////////
-require "star"
-sql = star.SQL()
-sql:open('test.db')
-sql:executesql('')
-sql:close()
-*/
 
 #ifdef _MANAGED
 #pragma managed(push, off)
@@ -172,54 +117,7 @@ sql:close()
 
 extern "C" __declspec(dllexport) int luaopen_star(lua_State *L) { 
 	CoInitialize(NULL);
-
-#ifdef _USRDLL
-	luabind::open(L);
-#endif
-
 	luaL_register(L, MODULE_NAME_STAR, starlib);	
-
-#ifdef _USRDLL
-	module(L, MODULE_NAME_STAR)
-	[
-		class_<CZipHelperEx>("zip")
-			.def(constructor<>())
-			.def("create", &CZipHelperEx::Create)
-			.def("push", &CZipHelperEx::AddFile)
-			.def("close", &CZipHelperEx::Close)
-			.def("open", &CZipHelperEx::Open)
-			.def("pull", &CZipHelperEx::UnzipOneItem),
-		def("zipit", &CZipHelperEx::PackFile),
-		def("unzip", &CZipHelperEx::UnpackFile),
-		def("zipadd", &CZipHelperEx::Add),
-		def("zipdelete", &CZipHelperEx::Delete)
-	];
-
-	module(L, MODULE_NAME_STAR)
-	[
-		class_<CXlsOperator>("XLS")
-			.def(constructor<>())
-			.def("create", &CXlsOperator::Create)
-			.def("setcol", &CXlsOperator::SetCol)
-			.def("addtitle", &CXlsOperator::AddTitle)
-			.def("writestr", &CXlsOperator::WriteStr)
-			.def("getrowscount", &CXlsOperator::GetRowsCount)
-			.def("getcolscount", &CXlsOperator::GetColsCount)
-			.def("save", &CXlsOperator::Save)
-			.def("error", &CXlsOperator::GetLastError),
-		class_<Star::File::CIni>("INI")
-			.def(constructor<>())
-			.def(constructor<LPCTSTR>())
-			.def("setfile", &Star::File::CIni::SetIniFile)
-			.def("getstring", &Star::File::CIni::GetIniString)
-			.def("setstring", &Star::File::CIni::SetIniString)
-			.def("getint", &Star::File::CIni::GetIniInt)
-			.def("setint", &Star::File::CIni::SetIniInt)
-		//def("a",a),
-		//def("b",b)
-	];
-
-#endif
 
 	return 1; 
 }
@@ -1077,69 +975,6 @@ int _crc32(lua_State *L)
 	}
 
 	return 0;
-}
-
-int crc32file(lua_State *L)
-{
-	CString strResult;
-	CString strFile;
-	unsigned long calculate_crc = 0;
-
-	int n = lua_gettop(L);
-	if ( n > 0 ){
-		if ( lua_isstring(L, 1) ){
-			CString strFile = lua_tostring(L, 1);
-			if ( CZipHelper::GetFileCrc(strFile, &calculate_crc)==0 ) {
-				strResult.Format("%08X", calculate_crc);
-				lua_pushlstring(L, strResult, strResult.GetLength());
-				return 1;
-			}
-		}
-	}
-
-	return 0;
-}
-
-int zipfile(lua_State *L)
-{
-	CString strPassword;
-	CString strFilePath;
-	CString strDstFilePath;
-	LPCTSTR lpszPassword = NULL;
-	unsigned long calculate_crc = 0;
-
-	int n = lua_gettop(L);
-	if ( n > 0 ){
-		if ( lua_isstring(L, 1) ){
-			strFilePath = lua_tostring(L, 1);
-		}else{
-			lua_pushboolean(L, false);
-			return 1;
-		}
-	}
-	if ( n > 1 ) {
-		if ( lua_isstring(L, 2) ) {
-			strDstFilePath = lua_tostring(L, 2);
-			strDstFilePath.Trim();
-		}
-	}
-
-	if ( strDstFilePath.GetLength() < 4 ) {
-		strDstFilePath = Star::Common::GetParentPath(strFilePath) + Star::Common::GetFileNameWithoutExt(strFilePath) + ".zip";
-	}
-
-	if ( n > 2 ) {
-		if ( lua_isstring(L, 3) ) {
-			strPassword = lua_tostring(L, 3);
-			if ( strPassword.IsEmpty()==FALSE ) {
-				lpszPassword = strPassword;
-			}
-		}
-	}
-
-	BOOL bOK = CZipHelper::PackFile(strFilePath, strDstFilePath, lpszPassword);
-	lua_pushboolean(L ,bOK);
-	return 1;
 }
 
 //////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,102 @@
+<html><head>
+<meta http-equiv='Content-Type' content='text/html' charset='gb2312'>
+<link rel='stylesheet' type='text/css' href='MSDN.css'>
+<TITLE>postmessage</TITLE>
+<xml>
+<MSHelp:TOCTitle Title="postmessage"/>
+<MSHelp:RLTitle Title="postmessage"/>
+<MSHelp:Keyword Index="K" Term="postmessage"/>
+<MSHelp:Keyword Index="A" Term="postmessage"/>
+<MSHelp:Attr Name="DevelopmentPhase" Value="Feature"/>
+<MSHelp:Attr Name="DocSet" Value="kbwcedoc"/>
+<MSHelp:Attr Name="Locale" Value="kbEnglish"/>
+<MSHelp:Attr Name="Product" Value="kbwince"/>
+<MSHelp:Attr Name="ProductVers" Value="kbceplat50"/>
+<MSHelp:Attr Name="Source" Value="Documentation"/>
+<MSHelp:Attr Name="Status" Value="Same"/>
+
+<MSHelp:Attr Name="TargetOS" Value="WinCE"/>
+<MSHelp:Attr Name="TargetOSVers" Value="kbwce50"/>
+<MSHelp:Attr Name="TopicType" Value="apiref"/>
+<MSHelp:Attr Name="Filename" Value="process_threads_reference.doc"/>
+<MSHelp:Attr Name="ContainsCode" Value="False"/>
+<MSHelp:Attr Name="ContainsRegistryKeys" Value="False"/>
+<MSHelp:Attr Name="APIName" Value="postmessage"/>
+<MSHelp:Attr Name="APIType" Value="LibDef"/>
+<MSHelp:Attr Name="APILocation" Value="Coredll.lib"/>
+<MSHelp:Attr Name="PBFeature" Value="CORE"/>
+<MSHelp:Attr Name="PBOnly" Value="False"/>
+</xml>
+<SCRIPT SRC="../scripts/dtuelink.js"></SCRIPT><META NAME="msdnID" CONTENT="_3002588"></HEAD>
+<body topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>
+<!--BANNER TITLE START-->star-Lua脚本插件帮助文档<!--BANNER TITLE END-->
+</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="postmessage"></A>postmessage</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+<DIV id="nstext" valign="bottom">
+
+<P>该函数调用PostMessage向窗口发送消息</P>
+
+<PRE class="syntax"><B>boolean postmessage(</B>
+  number hwnd,
+  number msg,
+  var wparam,
+  var lparam
+<B>)</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL>
+<DT><I>number</I></DT>
+<DD>窗口句柄</dd>
+</DL>
+<DL>
+<DT><I>number</I></DT>
+<DD>消息</dd>
+</DL>
+<DL>
+<DT><I>var</I></DT>
+<DD>消息参数，可以为0，nil，数值，字符串，userdata</dd>
+</DL>
+<DL>
+<DT><I>var</I></DT>
+<DD>消息参数，可以为0，nil，数值，字符串，userdata</dd>
+</DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL>
+<DT><I>boolean</I></DT>
+<DD>
+成功返回true，失败返回false</dd>
+</DL>
+
+<H4 class="dtH4">示例</H4>
+<P>
+require 'star'<BR><BR>
+local WM_CLOSE = 0x0010<BR><BR>
+success = star.postmessage(0x2345, WM_CLOSE)<BR>
+<BR>
+</P>
+
+<H4 class="dtH4">相关</H4>
+<DL>
+<A HREF="sendmessage.htm">sendmessage</A>
+</DL>
+
+<div class="footer"><hr></div>
+<A HREF="index.htm">首页</A>
+
+</div>
+</body>
+</html>

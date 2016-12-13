@@ -1,0 +1,93 @@
+<html><head>
+<meta http-equiv='Content-Type' content='text/html' charset='gb2312'>
+<link rel='stylesheet' type='text/css' href='MSDN.css'>
+<TITLE>log</TITLE>
+<xml>
+<MSlog:TOCTitle Title="log"/>
+<MSlog:RLTitle Title="log"/>
+<MSlog:Keyword Index="K" Term="log"/>
+<MSlog:Keyword Index="A" Term="log"/>
+<MSlog:Attr Name="DevelopmentPhase" Value="Feature"/>
+<MSlog:Attr Name="DocSet" Value="kbwcedoc"/>
+<MSlog:Attr Name="Locale" Value="kbEnglish"/>
+<MSlog:Attr Name="Product" Value="kbwince"/>
+<MSlog:Attr Name="ProductVers" Value="kbceplat50"/>
+<MSlog:Attr Name="Source" Value="Documentation"/>
+<MSlog:Attr Name="Status" Value="Same"/>
+
+<MSlog:Attr Name="TargetOS" Value="WinCE"/>
+<MSlog:Attr Name="TargetOSVers" Value="kbwce50"/>
+<MSlog:Attr Name="TopicType" Value="apiref"/>
+<MSlog:Attr Name="Filename" Value="process_threads_reference.doc"/>
+<MSlog:Attr Name="ContainsCode" Value="False"/>
+<MSlog:Attr Name="ContainsRegistryKeys" Value="False"/>
+<MSlog:Attr Name="APIName" Value="log"/>
+<MSlog:Attr Name="APIType" Value="LibDef"/>
+<MSlog:Attr Name="APILocation" Value="Coredll.lib"/>
+<MSlog:Attr Name="PBFeature" Value="CORE"/>
+<MSlog:Attr Name="PBOnly" Value="False"/>
+</xml>
+<SCRIPT SRC="../scripts/dtuelink.js"></SCRIPT><META NAME="msdnID" CONTENT="_3002588"></HEAD>
+<body topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>
+<!--BANNER TITLE START-->star-Lua脚本插件帮助文档<!--BANNER TITLE END-->
+</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="log"></A>log</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+<DIV id="nstext" valign="bottom">
+
+<P>该函数将字符串信息输出到log文件中</P>
+
+<PRE class="syntax"><B>log(string, [string logfilename], [boolean append])</B></PRE>
+
+
+<H4 class="dtH4">参数</H4>
+<DL>
+<DT><I>string</I></DT>
+<DD>字符串类型或者可以转换为字符串的类型</dd>
+</DL>
+<DL>
+<DT><I>string</I></DT>
+<DD>log文件名或全路经，可选，如果为nil则默认使用当前脚本的目录下log.txt日志文件</dd>
+</DL>
+<DL>
+<DT><I>boolean</I></DT>
+<DD>是否追加的方式输出，默认为false</dd>
+</DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL>
+<DT><I>boolean</I></DT>
+<DD>
+日志内容输出成功则为true，否则为false
+</dd>
+</DL>
+
+<H4 class="dtH4">示例</H4>
+<P>
+require 'star'<BR><BR>
+star.log('test')<BR><BR>
+star.log('test',nil,true)<BR><BR>
+star.log('test','c:/log.txt',true)<BR><BR>
+star.log('test','log.txt',true)<BR><BR>
+</P>
+
+
+<div class="footer"><hr></div>
+
+<A HREF="index.htm">首页</A>
+
+</div>
+</body>
+</html>

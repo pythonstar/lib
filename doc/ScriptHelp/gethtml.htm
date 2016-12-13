@@ -1,0 +1,87 @@
+<html><head>
+<meta http-equiv='Content-Type' content='text/html' charset='gb2312'>
+<link rel='stylesheet' type='text/css' href='MSDN.css'>
+<TITLE>gethtml</TITLE>
+<xml>
+<MSgethtml:TOCTitle Title="gethtml"/>
+<MSgethtml:RLTitle Title="gethtml"/>
+<MSgethtml:Keyword Index="K" Term="gethtml"/>
+<MSgethtml:Keyword Index="A" Term="gethtml"/>
+<MSgethtml:Attr Name="DevelopmentPhase" Value="Feature"/>
+<MSgethtml:Attr Name="DocSet" Value="kbwcedoc"/>
+<MSgethtml:Attr Name="Locale" Value="kbEnglish"/>
+<MSgethtml:Attr Name="Product" Value="kbwince"/>
+<MSgethtml:Attr Name="ProductVers" Value="kbceplat50"/>
+<MSgethtml:Attr Name="Source" Value="Documentation"/>
+<MSgethtml:Attr Name="Status" Value="Same"/>
+
+<MSgethtml:Attr Name="TargetOS" Value="WinCE"/>
+<MSgethtml:Attr Name="TargetOSVers" Value="kbwce50"/>
+<MSgethtml:Attr Name="TopicType" Value="apiref"/>
+<MSgethtml:Attr Name="Filename" Value="process_threads_reference.doc"/>
+<MSgethtml:Attr Name="ContainsCode" Value="False"/>
+<MSgethtml:Attr Name="ContainsRegistryKeys" Value="False"/>
+<MSgethtml:Attr Name="APIName" Value="gethtml"/>
+<MSgethtml:Attr Name="APIType" Value="LibDef"/>
+<MSgethtml:Attr Name="APILocation" Value="Coredll.lib"/>
+<MSgethtml:Attr Name="PBFeature" Value="CORE"/>
+<MSgethtml:Attr Name="PBOnly" Value="False"/>
+</xml>
+<SCRIPT SRC="../scripts/dtuelink.js"></SCRIPT><META NAME="msdnID" CONTENT="_3002588"></HEAD>
+<body topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>
+<!--BANNER TITLE START-->star-Lua脚本插件帮助文档<!--BANNER TITLE END-->
+</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="gethtml"></A>gethtml</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+<DIV id="nstext" valign="bottom">
+
+<P>该函数获取指定网址的源码内容，内部通过调用MFC CHttpFile类实现</P>
+
+<PRE class="syntax"><B>string gethtml(</B>
+  string url
+<B>)</B></PRE>
+
+
+<H4 class="dtH4">参数</H4>
+<DL>
+<DT><I>string</I></DT>
+<DD>网址</dd>
+</DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL>
+<DT><I>string</I></DT>
+<DD>
+指定网址的源码，失败返回空串''，不返回null
+</dd>
+</DL>
+
+<H4 class="dtH4">示例</H4>
+<P>
+require 'star'<BR><BR>
+html = star.gethtml('www.baidu.com')<BR><BR>
+</P>
+
+<H4 class="dtH4">相关</H4>
+<DL>
+<A HREF="gethtmlex.htm">gethtmlex</A>
+</DL>
+
+<div class="footer"><hr></div>
+<A HREF="index.htm">首页</A>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+urls = {
+'http://hi.baidu.com/yoo_yooo/',
+'http://hi.baidu.com/wmdjw/album',
+''
+};
+
+index = 1;
+
+--输入相册网址
+InputUrl(urls[index]);
+
+--获取该网址里面的相册图片
+StartGetAlbum();
+
+--获取相册图片完成就开始下载
+function OnGetAlbumEnd()
+	s = '获取相册图片完成';
+	msgprint(s);
+	msgtip(s);
+	msgbox(s);
+	--StartDownAlbum();
+end
+
+--下载相册图片完成，输入下一个网址并获取它的相册图片
+
+function OnDownAlbumEnd()
+	--[[index = index + 1;
+	if index==#urls then
+		--下载完成
+	elseif urls[index]~=nil and urls[index]~='' then
+		InputUrl(urls[index]);
+		StartGetAlbum();
+	end 
+]]
+end

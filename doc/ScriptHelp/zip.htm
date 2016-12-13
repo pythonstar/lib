@@ -1,0 +1,289 @@
+<html><head>
+<meta http-equiv='Content-Type' content='text/html' charset='gb2312'>
+<link rel='stylesheet' type='text/css' href='MSDN.css'>
+<TITLE>zip</TITLE>
+<xml>
+<MSzip:TOCTitle Title="zip"/>
+<MSzip:RLTitle Title="zip"/>
+<MSzip:Keyword Index="K" Term="zip"/>
+<MSzip:Keyword Index="A" Term="zip"/>
+<MSzip:Attr Name="DevelopmentPhase" Value="Feature"/>
+<MSzip:Attr Name="DocSet" Value="kbwcedoc"/>
+<MSzip:Attr Name="Locale" Value="kbEnglish"/>
+<MSzip:Attr Name="Product" Value="kbwince"/>
+<MSzip:Attr Name="ProductVers" Value="kbceplat50"/>
+<MSzip:Attr Name="Source" Value="Documentation"/>
+<MSzip:Attr Name="Status" Value="Same"/>
+
+<MSzip:Attr Name="TargetOS" Value="WinCE"/>
+<MSzip:Attr Name="TargetOSVers" Value="kbwce50"/>
+<MSzip:Attr Name="TopicType" Value="apiref"/>
+<MSzip:Attr Name="Filename" Value="process_threads_reference.doc"/>
+<MSzip:Attr Name="ContainsCode" Value="False"/>
+<MSzip:Attr Name="ContainsRegistryKeys" Value="False"/>
+<MSzip:Attr Name="APIName" Value="zip"/>
+<MSzip:Attr Name="APIType" Value="LibDef"/>
+<MSzip:Attr Name="APILocation" Value="Coredll.lib"/>
+<MSzip:Attr Name="PBFeature" Value="CORE"/>
+<MSzip:Attr Name="PBOnly" Value="False"/>
+</xml>
+<SCRIPT SRC="../scripts/dtuelink.js"></SCRIPT><META NAME="msdnID" CONTENT="_3002588"></HEAD>
+<body topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>
+<!--BANNER TITLE START-->star-Lua脚本插件帮助文档<!--BANNER TITLE END-->
+</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="zip"></A>zip</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+<DIV id="nstext" valign="bottom">
+
+<P>操作zip文件的函数</P>
+
+<H4 class="dtH4">函数</H4>
+<P>压缩一个目录或单个文件为zip文件</P>
+<PRE class="syntax"><B>star.zipfile(string srcfilename, string zipfilename, string password)</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL>
+<DT><I>string</I></DT>
+<DD>将要被压缩的文件全路经，可以是一个目录，可以是单个文件路径</dd>
+</DL>
+<DL>
+<DT><I>string</I></DT>
+<DD>将要压缩成的zip文件全路经，可以为nil，当为nil时生成的zip文件名为srcfilename同目录同名文件，后缀为.zip</dd>
+</DL>
+<DL>
+<DT><I>string</I></DT>
+<DD>压缩密码，如无密码此参数可以省略不填，或输入nil</dd>
+</DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL>
+<DT><I>boolean</I></DT>
+<DD>
+成功为true，失败为false
+</dd>
+</DL>
+
+<div class="footer"><hr></div>
+
+<H4 class="dtH4">函数</H4>
+<P>压缩单个文件为zip文件</P>
+<PRE class="syntax"><B>star.zipit(string zipitname, string filename, string entryname)</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL>
+<DT><I>string</I></DT>
+<DD>将要压缩成的zip文件全路经</dd>
+</DL>
+<DL>
+<DT><I>string</I></DT>
+<DD>将要被压缩的文件全路经</dd>
+</DL>
+<DL>
+<DT><I>string</I></DT>
+<DD>压缩到zip文件中的entry名，可以为nil，如果为nil则取filename的文件名作为entry名</dd>
+</DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL>
+<DT><I>boolean</I></DT>
+<DD>
+成功为true，失败为false
+</dd>
+</DL>
+
+<div class="footer"><hr></div>
+
+<H4 class="dtH4">函数</H4>
+<P>添加单个文件到zip文件</P>
+<PRE class="syntax"><B>star.zipadd(string zipitname, string filename, string entryname)</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL><DT><I>string</I></DT>
+<DD>将要添加文件的zip文件全路经</dd></DL>
+<DL><DT><I>string</I></DT>
+<DD>将要被添加的文件全路经，如果为nil而entryname不为nil则将删除zip文件中的entryname。</dd></DL>
+<DL><DT><I>string</I></DT>
+<DD>压缩到zip文件中的entry名，可以为nil，如果为nil则取filename的文件名作为entry名。如果filename为nil而entryname不为nil则将删除zip文件中的entryname。</dd></DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL><DT><I>boolean</I></DT>
+<DD>成功为true，失败为false</dd></DL>
+
+<div class="footer"><hr></div>
+
+<H4 class="dtH4">函数</H4>
+<P>删除zip文件中的某一个entry</P>
+<PRE class="syntax"><B>star.zipdelete(string zipitname, string entryname)</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL><DT><I>string</I></DT>
+<DD>zip文件全路经</dd></DL>
+<DL><DT><I>string</I></DT>
+<DD>将要被删除的entry名</dd></DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL><DT><I>boolean</I></DT>
+<DD>成功为true，失败为false</dd></DL>
+
+<div class="footer"><hr></div>
+
+<H4 class="dtH4">函数</H4>
+<P>解压缩一个zip文件</P>
+<PRE class="syntax"><B>star.unzip(string zipitname, string dir)</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL><DT><I>string</I></DT>
+<DD>zip文件全路经</dd></DL>
+<DL><DT><I>string</I></DT>
+<DD>解压缩的目录，如果为nil则解压到zip文件同名目录中</dd></DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL><DT><I>boolean</I></DT>
+<DD>成功为true，失败为false</dd></DL>
+
+<div class="footer"><hr></div>
+
+<H4 class="dtH4">函数</H4>
+<P>构造一个zip类对象</P>
+<PRE class="syntax"><B>star.zip()</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL><DT><I>void</I></DT>
+<DD>无</dd></DL></DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL><DT><I>var</I></DT>
+<DD>成功返回一个zip类对象，失败为nil</dd></DL>
+
+<div class="footer"><hr></div>
+
+<H4 class="dtH4">函数</H4>
+<P>新创建一个zip文件</P>
+<PRE class="syntax"><B>zip:create(string zipitname)</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL><DT><I>string</I></DT>
+<DD>zip文件全路经</dd></DL>
+<DL><DT><I>string</I></DT></DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL><DT><I>boolean</I></DT>
+<DD>成功为true，失败为false。关闭请用close函数。该函数恒创建新的zip文件，如果zip文件已经存在则将会被覆写掉。</dd></DL>
+
+<div class="footer"><hr></div>
+
+<H4 class="dtH4">函数</H4>
+<P>打开一个已经存在的zip文件</P>
+<PRE class="syntax"><B>zip:open(string zipitname)</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL><DT><I>string</I></DT>
+<DD>zip文件全路经</dd></DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL><DT><I>boolean</I></DT>
+<DD>成功为true，失败为false。关闭请用close函数。如果zip文件不存在则打开失败，不会新创建zip文件。</dd></DL>
+
+<div class="footer"><hr></div>
+
+<H4 class="dtH4">函数</H4>
+<P>向zip文件中添加文件</P>
+<PRE class="syntax"><B>zip:push(string filename, string entryname)</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL><DT><I>string</I></DT>
+<DD>待添加的文件全路经</dd></DL>
+<DL><DT><I>string</I></DT>
+<DD>entry名，如果为nil则取filename的文件名作为entry名。</dd></DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL><DT><I>boolean</I></DT>
+<DD>成功为true，失败为false。注意该函数应和zip:create函数配合使用，如果zip是通过open方式打开的，则push函数会覆写原始zip而不会达到真正的添加文件的效果。添加文件请使用star.zipadd函数。</dd></DL>
+
+<div class="footer"><hr></div>
+
+<H4 class="dtH4">函数</H4>
+<P>抽取出一个文件（支持对某目录下的文件抽取，但不支持对目录的抽取）</P>
+<PRE class="syntax"><B>zip:pull(string entryname, string dir)</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL><DT><I>string</I></DT>
+<DD>待抽取的entry名，不支持字符\，请使用/，不支持目录抽取</dd></DL>
+<DL><DT><I>string</I></DT>
+<DD>解压缩的目录，如果目录不存在，该函数会自行创建。如果为nil则解压到zip文件同名目录中。</dd></DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL><DT><I>boolean</I></DT>
+<DD>成功为true，失败为false。注意该函数应和zip:open配合使用，表示对已经存在的zip文件进行抽取操作。</dd></DL>
+
+<div class="footer"><hr></div>
+
+<H4 class="dtH4">函数</H4>
+<P>关闭创建或者打开的zip文件</P>
+<PRE class="syntax"><B>zip:close()</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL><DT><I>void</I></DT>
+<DD>无</dd></DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL><DT><I>boolean</I></DT>
+<DD>成功为true，失败为false</dd></DL>
+
+<H4 class="dtH4">示例</H4>
+<P>
+<PRE class="syntax"><B>
+require 'star'
+
+star.zipit('e:\\1.zip', 'e:\\1.txt', nil)
+
+star.zipit('e:\\1.zip', 'e:\\1.txt', '2.txt')
+
+star.zipdelete('e:\\1.zip', '2.txt')
+
+star.zipadd('e:\\1.zip', 'e:\\1.txt', nil)
+
+star.zipadd('e:\\1.zip', 'e:\\1.txt', '2.txt')
+
+star.unzip('e:\\1.zip', nil)
+
+
+zip = star.zip()
+
+zip:create('e:\\1.zip')
+
+zip:push('e:\\1.txt',nil)
+
+zip:push('e:\\2.jpg','res\\2.jpg')
+
+zip:close()
+
+
+zip:open('e:\\1.zip')
+
+zip:pull('res/2.jpg','e:\\1')
+
+zip:close()
+</B></PRE>
+</P>
+
+
+<div class="footer"><hr></div>
+
+<A HREF="index.htm">首页</A>
+
+</div>
+</body>
+</html>

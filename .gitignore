@@ -1,0 +1,9 @@
+/2008share
+/2008static
+/LuaStarLib/Debug
+/LuaStarLib/Lib_Debug
+/LuaStarLib/Lib_Release
+/LuaStarLib/Release
+/LuaStarLib/*.user
+/LuaStarLib/*.ncb
+/LuaStarLib/*.suo

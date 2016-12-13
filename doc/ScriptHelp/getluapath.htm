@@ -1,0 +1,96 @@
+<html><head>
+<meta http-equiv='Content-Type' content='text/html' charset='gb2312'>
+<link rel='stylesheet' type='text/css' href='MSDN.css'>
+<TITLE>urldownload2str</TITLE>
+<xml>
+<MSurldownload2str:TOCTitle Title="urldownload2str"/>
+<MSurldownload2str:RLTitle Title="urldownload2str"/>
+<MSurldownload2str:Keyword Index="K" Term="urldownload2str"/>
+<MSurldownload2str:Keyword Index="A" Term="urldownload2str"/>
+<MSurldownload2str:Attr Name="DevelopmentPhase" Value="Feature"/>
+<MSurldownload2str:Attr Name="DocSet" Value="kbwcedoc"/>
+<MSurldownload2str:Attr Name="Locale" Value="kbEnglish"/>
+<MSurldownload2str:Attr Name="Product" Value="kbwince"/>
+<MSurldownload2str:Attr Name="ProductVers" Value="kbceplat50"/>
+<MSurldownload2str:Attr Name="Source" Value="Documentation"/>
+<MSurldownload2str:Attr Name="Status" Value="Same"/>
+
+<MSurldownload2str:Attr Name="TargetOS" Value="WinCE"/>
+<MSurldownload2str:Attr Name="TargetOSVers" Value="kbwce50"/>
+<MSurldownload2str:Attr Name="TopicType" Value="apiref"/>
+<MSurldownload2str:Attr Name="Filename" Value="process_threads_reference.doc"/>
+<MSurldownload2str:Attr Name="ContainsCode" Value="False"/>
+<MSurldownload2str:Attr Name="ContainsRegistryKeys" Value="False"/>
+<MSurldownload2str:Attr Name="APIName" Value="urldownload2str"/>
+<MSurldownload2str:Attr Name="APIType" Value="LibDef"/>
+<MSurldownload2str:Attr Name="APILocation" Value="Coredll.lib"/>
+<MSurldownload2str:Attr Name="PBFeature" Value="CORE"/>
+<MSurldownload2str:Attr Name="PBOnly" Value="False"/>
+</xml>
+<SCRIPT SRC="../scripts/dtuelink.js"></SCRIPT><META NAME="msdnID" CONTENT="_3002588"></HEAD>
+<body topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>
+<!--BANNER TITLE START-->star-Lua脚本插件帮助文档<!--BANNER TITLE END-->
+</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="urldownload2str"></A>getluapath</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+<DIV id="nstext" valign="bottom">
+
+<P>该函数通过调用lua_getstack、lua_getinfo获取当前Lua脚本的路径信息</P>
+
+<PRE class="syntax"><B>string, string, string getluapath()</B></PRE>
+
+
+<H4 class="dtH4">参数</H4>
+<DL>
+<DT><I>void</I></DT>
+<DD>无</dd>
+</DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL>
+<DT><I>string</I></DT>
+<DD>
+Lua脚本路径所在的目录，最后包含\字符</dd>
+</DL>
+<DL>
+<DT><I>string</I></DT>
+<DD>
+Lua脚本全路径</dd>
+</DL>
+<DL>
+<DT><I>string</I></DT>
+<DD>
+Lua脚本文件名（包含扩展名）</dd>
+</DL>
+
+
+<H4 class="dtH4">示例</H4>
+<P>
+require 'star'<BR><BR>
+dir, path, name = star.getluapath()<BR>
+<BR>
+</P>
+
+<H4 class="dtH4">相关</H4>
+<DL>
+<A HREF="getstartpath.htm">getstartpath</A>
+</DL>
+
+<div class="footer"><hr></div>
+<A HREF="index.htm">首页</A>
+
+</div>
+</body>
+</html>

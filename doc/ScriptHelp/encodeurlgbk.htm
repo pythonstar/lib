@@ -1,0 +1,82 @@
+<html><head>
+<meta http-equiv='Content-Type' content='text/html' charset='gb2312'>
+<link rel='stylesheet' type='text/css' href='MSDN.css'>
+<TITLE>encodeurlgbk</TITLE>
+<xml>
+<MSHelp:TOCTitle Title="encodeurlgbk"/>
+<MSHelp:RLTitle Title="encodeurlgbk"/>
+<MSHelp:Keyword Index="K" Term="encodeurlgbk"/>
+<MSHelp:Keyword Index="A" Term="encodeurlgbk"/>
+<MSHelp:Attr Name="DevelopmentPhase" Value="Feature"/>
+<MSHelp:Attr Name="DocSet" Value="kbwcedoc"/>
+<MSHelp:Attr Name="Locale" Value="kbEnglish"/>
+<MSHelp:Attr Name="Product" Value="kbwince"/>
+<MSHelp:Attr Name="ProductVers" Value="kbceplat50"/>
+<MSHelp:Attr Name="Source" Value="Documentation"/>
+<MSHelp:Attr Name="Status" Value="Same"/>
+
+<MSHelp:Attr Name="TargetOS" Value="WinCE"/>
+<MSHelp:Attr Name="TargetOSVers" Value="kbwce50"/>
+<MSHelp:Attr Name="TopicType" Value="apiref"/>
+<MSHelp:Attr Name="Filename" Value="process_threads_reference.doc"/>
+<MSHelp:Attr Name="ContainsCode" Value="False"/>
+<MSHelp:Attr Name="ContainsRegistryKeys" Value="False"/>
+<MSHelp:Attr Name="APIName" Value="encodeurlgbk"/>
+<MSHelp:Attr Name="APIType" Value="LibDef"/>
+<MSHelp:Attr Name="APILocation" Value="Coredll.lib"/>
+<MSHelp:Attr Name="PBFeature" Value="CORE"/>
+<MSHelp:Attr Name="PBOnly" Value="False"/>
+</xml>
+<SCRIPT SRC="../scripts/dtuelink.js"></SCRIPT><META NAME="msdnID" CONTENT="_3002588"></HEAD>
+<body topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>
+<!--BANNER TITLE START-->star-Lua脚本插件帮助文档<!--BANNER TITLE END-->
+</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="encodeurlgbk"></A>encodeurlgbk</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+<DIV id="nstext" valign="bottom">
+
+<P>转换中文字符，一个中文字符转换为两个%字符，如果是中文和英文的混合则英文不变。</P>
+<PRE class="syntax"><B>string encodeurlgbk(</B>
+  string s
+<B>)</B></PRE>
+
+<H4 class="dtH4">参数</H4>
+<DL><DT><I>string</I></DT><DD>字符串</dd></DL>
+
+<H4 class="dtH4">返回值</H4>
+<DL>
+<DT><I>string</I></DT>
+<DD>
+成功返回转换后的字符串，失败返回nil</dd>
+</DL>
+<H4 class="dtH4">示例</H4>
+<PRE class="syntax">
+require 'star'
+success = star.encodeurlgbk('你好world')
+</PRE>
+<H4 class="dtH4">相关</H4>
+<DL>
+<A HREF="encodeurlutf8.htm">encodeurlutf8</A>
+<A HREF="utf8s2ms.htm">utf8s2ms</A>
+<A HREF="unescapeunicode.htm">unescapeunicode</A>
+<A HREF="unescapexml.htm">unescapexml</A>
+</DL>
+
+<div class="footer"><hr></div>
+<A HREF="index.htm">首页</A>
+
+</div>
+</body>
+</html>
