@@ -1,0 +1,7 @@
+²Î¿¼£ºhttp://www.winsim.com/diskid32/diskid32.cpp
+
+char szDiskId[MAX_PATH] = {0};
+	GetHardDriveSerialNumber(szDiskId,MAX_PATH);
+	CString strTemp;
+	strTemp = szDiskId;
+	strTemp.Trim();

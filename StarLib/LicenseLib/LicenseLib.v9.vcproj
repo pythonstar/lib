@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject ProjectType="Visual C++" Version="8.00" Name="LicenseLib" ProjectGUID="{465F029E-F3AA-4F25-9748-4A107A260DFD}" RootNamespace="LicenseLib" Keyword="Win32Proj" TargetFrameworkVersion="131072">
+  <Platforms>
+    <Platform Name="Win32" />
+  </Platforms>
+  <ToolFiles>
+  </ToolFiles>
+  <Configurations>
+    <Configuration Name="Debug|Win32" OutputDirectory=".\" IntermediateDirectory="$(ConfigurationName)" ConfigurationType="4" CharacterSet="2">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" Optimization="0" AdditionalIncludeDirectories="..\baselib\lua\" PreprocessorDefinitions="WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;VERSION=&quot;\&quot;0.1.0\&quot;&quot;" MinimalRebuild="true" BasicRuntimeChecks="3" RuntimeLibrary="1" UsePrecompiledHeader="0" WarningLevel="3" DebugInformationFormat="4" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCLibrarianTool" AdditionalDependencies="lua-5.14.lib" AdditionalLibraryDirectories="..\baselib\lua\" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+    <Configuration Name="Release|Win32" OutputDirectory=".\" IntermediateDirectory="$(ConfigurationName)" ConfigurationType="4" CharacterSet="2" WholeProgramOptimization="1">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" Optimization="2" EnableIntrinsicFunctions="true" AdditionalIncludeDirectories="..\baselib\lua\" PreprocessorDefinitions="WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;VERSION=&quot;\&quot;0.1.0\&quot;&quot;" RuntimeLibrary="0" EnableFunctionLevelLinking="true" UsePrecompiledHeader="0" WarningLevel="3" DebugInformationFormat="3" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCLibrarianTool" AdditionalDependencies="lua-5.14.lib" AdditionalLibraryDirectories="..\baselib\lua\" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+  </Configurations>
+  <References>
+  </References>
+  <Files>
+    <Filter Name="source" Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx" UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+      <File RelativePath=".\AntiDebug.cpp">
+      </File>
+      <File RelativePath=".\des.c">
+      </File>
+      <File RelativePath=".\des.h">
+      </File>
+      <File RelativePath=".\diskid.cpp">
+      </File>
+      <File RelativePath=".\lbitlib.c">
+      </File>
+      <File RelativePath=".\lua514.cpp">
+      </File>
+      <File RelativePath=".\md5.c">
+      </File>
+      <File RelativePath=".\md5.h">
+      </File>
+      <File RelativePath=".\rc4.c">
+      </File>
+      <File RelativePath=".\rc4.h">
+      </File>
+      <File RelativePath=".\register.cpp">
+      </File>
+      <File RelativePath=".\Thread.cpp">
+      </File>
+      <File RelativePath=".\Thread.h">
+      </File>
+    </Filter>
+    <Filter Name="libcpuid">
+      <File RelativePath=".\libcpuid\asm-bits.c">
+      </File>
+      <File RelativePath=".\libcpuid\asm-bits.h">
+      </File>
+      <File RelativePath=".\libcpuid\cpuid_main.c">
+      </File>
+      <File RelativePath=".\libcpuid\libcpuid.h">
+      </File>
+      <File RelativePath=".\libcpuid\libcpuid_constants.h">
+      </File>
+      <File RelativePath=".\libcpuid\libcpuid_types.h">
+      </File>
+      <File RelativePath=".\libcpuid\libcpuid_util.c">
+      </File>
+      <File RelativePath=".\libcpuid\libcpuid_util.h">
+      </File>
+      <File RelativePath=".\libcpuid\rdtsc.c">
+      </File>
+      <File RelativePath=".\libcpuid\recog_amd.c">
+      </File>
+      <File RelativePath=".\libcpuid\recog_amd.h">
+      </File>
+      <File RelativePath=".\libcpuid\recog_intel.c">
+      </File>
+      <File RelativePath=".\libcpuid\recog_intel.h">
+      </File>
+    </Filter>
+    <File RelativePath=".\AntiDebug.h">
+    </File>
+    <File RelativePath=".\register.h">
+    </File>
+  </Files>
+  <Globals>
+  </Globals>
+</VisualStudioProject>
