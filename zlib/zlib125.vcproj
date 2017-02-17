@@ -62,7 +62,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\2008static\$(ProjectName)D.lib"
+				OutputFile="..\2008bin\$(ProjectName)D.lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -111,7 +111,7 @@
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="true"
-				DebugInformationFormat="1"
+				DebugInformationFormat="3"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -124,7 +124,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\2008static\$(ProjectName).lib"
+				OutputFile="..\2008bin\$(ProjectName).lib"
 				IgnoreDefaultLibraryNames="LIBC.lib"
 			/>
 			<Tool
